@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/pm/XP/MD5E-s7103--cfa45a10c64b9a32559c4ef4707642ab.cmd/MD5E-s7103--cfa45a10c64b9a32559c4ef4707642ab.cmd
+/annex/objects/MD5E-s7103--cfa45a10c64b9a32559c4ef4707642ab.cmd

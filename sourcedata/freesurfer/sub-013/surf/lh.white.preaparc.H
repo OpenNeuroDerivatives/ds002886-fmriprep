@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/gm/vp/MD5E-s539919--af365e8594ceebe497ba02e148ad948c.H/MD5E-s539919--af365e8594ceebe497ba02e148ad948c.H
+/annex/objects/MD5E-s539919--af365e8594ceebe497ba02e148ad948c.H

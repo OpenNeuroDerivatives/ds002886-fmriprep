@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/zZ/w9/MD5E-s540627--fdab3624cb9c2f55210bdea02f160e23.H/MD5E-s540627--fdab3624cb9c2f55210bdea02f160e23.H
+/annex/objects/MD5E-s540627--fdab3624cb9c2f55210bdea02f160e23.H
