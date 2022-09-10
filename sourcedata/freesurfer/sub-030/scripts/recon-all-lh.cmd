@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/40/8V/MD5E-s13505--5407193a35d066054ea92f26a433d74b.cmd/MD5E-s13505--5407193a35d066054ea92f26a433d74b.cmd
+/annex/objects/MD5E-s13505--5407193a35d066054ea92f26a433d74b.cmd

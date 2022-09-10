@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/PG/9m/MD5E-s496623--ed3826431d539966bf0c7ec21491d09e.K/MD5E-s496623--ed3826431d539966bf0c7ec21491d09e.K
+/annex/objects/MD5E-s496623--ed3826431d539966bf0c7ec21491d09e.K

@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/z3/WK/MD5E-s13505--f7bcf6d40ea0dd6079e6dd7e6df26ca7.cmd/MD5E-s13505--f7bcf6d40ea0dd6079e6dd7e6df26ca7.cmd
+/annex/objects/MD5E-s13505--f7bcf6d40ea0dd6079e6dd7e6df26ca7.cmd
