@@ -29,22 +29,6 @@ using brain-extracted versions of both T1w reference and the T1w template.
 The following templates were selected for spatial normalization:
 *ICBM 152 Nonlinear Asymmetrical template version 2009c* [@mni152nlin2009casym, RRID:SCR_008796; TemplateFlow ID: MNI152NLin2009cAsym], *FSL's MNI ICBM 152 non-linear 6th Generation Asymmetric Average Brain Stereotaxic Registration Model* [@mni152nlin6asym, RRID:SCR_002823; TemplateFlow ID: MNI152NLin6Asym].
 
-
-Preprocessing of B<sub>0</sub> inhomogeneity mappings
-
-: A total of 1 fieldmaps were found available within the input
-BIDS structure for this particular subject.
-A deformation field to correct for susceptibility distortions was estimated
-based on *fMRIPrep*'s *fieldmap-less* approach.
-The deformation field is that resulting from co-registering the EPI reference
-to the same-subject T1w-reference with its intensity inverted [@fieldmapless1;
-@fieldmapless2].
-Registration is performed with `antsRegistration`
-(ANTs 2.3.3), and
-the process regularized by constraining deformation to be nonzero only
-along the phase-encoding direction, and modulated with an average fieldmap
-template [@fieldmapless3].
-
 Functional data preprocessing
 
 : For each of the 4 BOLD runs found per subject (across all
@@ -56,9 +40,11 @@ Head-motion parameters with respect to the BOLD reference
 (transformation matrices, and six corresponding rotation and translation
 parameters) are estimated before any spatiotemporal filtering using
 `mcflirt` [FSL 6.0.5.1:57b01774, @mcflirt].
-The estimated *fieldmap* was then aligned with rigid-registration to the target
-EPI (echo-planar imaging) reference run.
-The field coefficients were mapped on to the reference EPI using the transform.
+The BOLD time-series (including slice-timing correction when applied)
+were resampled onto their original, native space by applying
+the transforms to correct for head-motion.
+These resampled BOLD time-series will be referred to as *preprocessed
+BOLD in original space*, or just *preprocessed BOLD*.
 The BOLD reference was then co-registered to the T1w reference using
 `bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
 Co-registration was configured with six degrees of freedom.
